@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   body{
+      background-color: #1d2026;
+   }
+   main{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      gap: 1rem;
+   }
+   .box{
+      width: 5rem;
+      aspect-ratio: 1;
+      background-color: #47fa50;
+      border-radius: 12rem;
+      animation: anime cubic-bezier(0.23, 0.06, 0.73, 0.95) infinite;
+      animation-duration: 700ms;
+      
+   }
+
+   @keyframes anime {
+      50%{
+         transform: translateY(-2.3rem); 
+      }
+   }
+</style>
+<body>
+   <main>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </main>
+
+   <script>
+  
+   </script>
+</body>
+</html>
